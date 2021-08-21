@@ -9,20 +9,20 @@ console.log(Color.Yellow);
 function addTwoThings(x, y) {
     return x + y;
 }
-var z = addTwoThings("2", "5");
+let z = addTwoThings("2", "5");
 // Guard .. Type Guards
 if (typeof z == "string") {
     z.toUpperCase();
 }
 // [1, 2, 3, "Hello"] // Array<number> or number[]
-var myObj;
+let myObj;
 myObj = [1, 2, 3];
 myObj = { fname: "Justin" };
 if (myObj instanceof Array) {
     console.log(myObj);
 }
 else {
-    var values = Object.values(myObj);
+    let values = Object.values(myObj);
     console.log(values);
 }
 //myObj.map()
